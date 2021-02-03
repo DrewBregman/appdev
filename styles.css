@@ -1,0 +1,291 @@
+/* Header */
+.headerMenu {
+    background-color: #ccc;
+    background-image: radial-gradient(#eee 15%, transparent 15%), radial-gradient(#eee 15%, transparent 60%); 
+    background-size:60px 60px;
+    background-position: 0 0, 30px 30px;
+    height: 70px;
+    border-bottom: 0px;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+}
+
+#wrapper {
+    margin-left: 30px;
+    margin-right: auto;
+    width: 1000px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.name {
+    margin-left: 50px;
+    padding-top: 45px;
+    padding-bottom: 0px;
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+    width: 80px;
+}
+
+.logo img {
+    width: 80px;
+    height: 50px;
+}
+/* Home Page */
+
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+.right-side > .brand {
+    margin-left: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.brand {
+    height: 22px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+    box-shadow: 0 0 20px 9px black;
+    border-radius: 30px;
+}
+.brand a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.brand:hover {
+    border-bottom: 1px solid black;
+}
+
+.brand a:hover {
+    color: black;
+}
+
+/* Portfolio styles on Home page */
+
+.mission-description {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.ignite {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.subtitle {
+    color: black;
+    }
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subittle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: white;
+
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.mission-description {
+    text-align: center;
+
+}
+
+/* Registration Form */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, Sans-serif;
+}
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+ }
+
+ .toggle-btn {
+     padding: 10px 30px;
+     cursor: pointer;
+     background: transparent;
+     border: 0;
+     outline: none;
+     position: relative;
+ }
+
+ #btn {
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 110px;
+     height: 100%;
+     background: linear-gradient(to right, #ff105f, #ffad06);
+     border-radius: 30px;
+     transition: .5s;
+ }
+
+ .input-group{
+     top: 180px;
+     position: absolute;
+     width: 280px;
+     transition: .5s;
+ }
+
+ .input-field {
+     width: 100%;
+     padding: 10px 0;
+     margin: 5px 0;
+     border-left: 0;
+     border-top: 0;
+     border-right: 0;
+     border-bottom: 1px solid #999;
+     outline: none;
+     background: transparent;
+     font-style: sans-serif;
+ }
+
+ .submit-btn {
+     width: 85%;
+     padding: 10px 30px;
+     cursor: pointer;
+     display: block;
+     margin: auto;
+     background: linear-gradient(to right, #ff105f,#ffad06);
+     border: 0;
+     outline: none;
+     border-radius: 30px;
+ }
+
+ .chech-box{
+     margin: 30px 10px 30px 0;
+ }
+
+ span{
+     color: #777;
+     font-size: 12px;
+     bottom: 68px;
+     position: absolute;
+ }
+
+ #register {
+     left: 450px;
+ }
+
+

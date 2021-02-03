@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login And Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input id="myInput" type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <form id ="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="Email Address" required>
+                <input id="myInput" type="password" class="input-field" placeholder="Enter Password" required>
+                <input id="myInput" type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" onclick="myFunction()"><span>Show Password</span>
+                <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+        
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Explore.html">Explore</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Matches.html">Matches</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="directMessages">Direct Messages</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Profile">Profile</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>COMPANY NAME</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px" ;
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "400px" ;
+            z.style.left = "0px";
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password"){
+                x.type = "text";
+
+            } else {
+                x.type = "password";
+            }
+               
+        }
+    </script>
+</body>
+</html>
